@@ -14,7 +14,7 @@
     html{scroll-behavior:smooth}
     body{background:var(--bg);color:var(--fg);font-family:"Geist Mono",monospace;font-size:13px;line-height:1.6;min-height:100vh;-webkit-font-smoothing:antialiased;user-select:none;-webkit-user-select:none;overflow:hidden}
     body::after{content:"";position:fixed;top:-180px;left:50%;transform:translateX(-50%);width:600px;height:400px;background:radial-gradient(ellipse,rgba(24,218,173,0.07) 0%,transparent 70%);pointer-events:none;z-index:0}
-    .page{display:grid;grid-template-columns:280px 1fr 300px;grid-template-rows:1fr auto;height:100vh;max-width:1400px;margin:0 auto}
+    .page{display:grid;grid-template-columns:280px 1fr 300px;height:100vh;max-width:1400px;margin:0 auto}
     .sidebar{padding:1.5rem 1.5rem;border-right:1px solid var(--border);display:flex;flex-direction:column;gap:1rem;overflow-y:auto;z-index:1}
     .avatar{width:72px;height:72px;border-radius:50%;border:2px solid var(--border-hover);background:var(--surface2);overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:700;color:var(--accent)}
     .avatar img{width:100%;height:100%;object-fit:cover}
@@ -82,9 +82,8 @@
     .step-icon-wrap .ms{font-size:17px;color:var(--accent)}
     .step-title{font-size:14px;font-weight:600;color:var(--fg);margin-bottom:3px}
     .step-desc{font-size:11.5px;color:var(--mid);line-height:1.65}
-    .footer{grid-column:span 3;border-top:1px solid var(--border);padding:0.65rem 2rem;display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--dim);flex-shrink:0}
-    .footer a{color:var(--accent);text-decoration:none}
-    .footer a:hover{text-decoration:underline;text-underline-offset:3px}
+    
+    
     ::-webkit-scrollbar{display:none}
     *{scrollbar-width:none;-ms-overflow-style:none}
 
@@ -148,6 +147,11 @@
       <a href="https://discord.com/users/YOURID" target="_blank" class="btn btn-primary"><span class="ms">handshake</span> Hire Me</a>
       <a href="https://github.com/YOURGITHUB" target="_blank" class="btn btn-secondary"><span class="ms">code</span> GitHub</a>
     </div>
+    <div class="divider"></div>
+    <div style="display:flex;justify-content:space-between;align-items:center;font-size:10px;color:var(--dim)">
+      <span>Made by <a href="https://discord.com/users/YOURID" target="_blank" style="color:var(--dim);text-decoration:none;transition:color 0.2s" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--dim)'">@Vector []</a></span>
+      <span id="clock" style="color:var(--accent);letter-spacing:0.06em">--:--:--</span>
+    </div>
   </aside>
 
   <main class="main">
@@ -210,11 +214,6 @@
     </section>
     <button class="btn btn-secondary" style="margin-top:0.5rem" onclick="openTos()"><span class="ms">gavel</span> Read Terms of Service</button>
   </aside>
-
-  <footer class="footer">
-    <span>Made by <a href="https://discord.com/users/YOURID" target="_blank">@Vector []</a></span>
-    <span>&copy; 2025 All rights reserved &nbsp;&middot;&nbsp; <span id="clock" style="color:var(--accent)">--:--:--</span> GMT+3</span>
-  </footer>
 </div>
 
 
