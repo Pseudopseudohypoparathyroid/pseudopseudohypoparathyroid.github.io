@@ -12,7 +12,7 @@
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
     :root{--bg:#0d0f0e;--surface:#131816;--surface2:#181e1c;--surface3:#1e2522;--border:rgba(24,218,173,0.1);--border-hover:rgba(24,218,173,0.28);--fg:#e4f0ec;--mid:#6b8a82;--dim:#3d5550;--accent:#18daad;--accent-dim:rgba(24,218,173,0.1)}
     html{scroll-behavior:smooth}
-    body{background:var(--bg);color:var(--fg);font-family:"Geist Mono",monospace;font-size:13px;line-height:1.6;min-height:100vh;-webkit-font-smoothing:antialiased;user-select:none;-webkit-user-select:none}
+    body{background:var(--bg);color:var(--fg);font-family:"Geist Mono",monospace;font-size:13px;line-height:1.6;min-height:100vh;-webkit-font-smoothing:antialiased;user-select:none;-webkit-user-select:none;overflow:hidden}
     body::after{content:"";position:fixed;top:-180px;left:50%;transform:translateX(-50%);width:600px;height:400px;background:radial-gradient(ellipse,rgba(24,218,173,0.07) 0%,transparent 70%);pointer-events:none;z-index:0}
     .page{display:grid;grid-template-columns:280px 1fr 300px;grid-template-rows:1fr auto;min-height:100vh;max-width:1400px;margin:0 auto}
     .sidebar{padding:2.5rem 1.75rem;border-right:1px solid var(--border);display:flex;flex-direction:column;gap:1.5rem;position:sticky;top:0;align-self:start;z-index:1}
@@ -85,9 +85,8 @@
     .footer{grid-column:span 3;border-top:1px solid var(--border);padding:1.25rem 2rem;display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--dim)}
     .footer a{color:var(--accent);text-decoration:none}
     .footer a:hover{text-decoration:underline;text-underline-offset:3px}
-    ::-webkit-scrollbar{width:4px}
-    ::-webkit-scrollbar-track{background:var(--bg)}
-    ::-webkit-scrollbar-thumb{background:var(--dim);border-radius:2px}
+    ::-webkit-scrollbar{display:none}
+    *{scrollbar-width:none;-ms-overflow-style:none}
 
     /* MODAL OVERLAY */
     .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:10000;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity 0.22s ease,visibility 0.22s ease;backdrop-filter:blur(4px)}
