@@ -15,8 +15,8 @@
     body{background:var(--bg);color:var(--fg);font-family:"Geist Mono",monospace;font-size:13px;line-height:1.6;min-height:100vh;-webkit-font-smoothing:antialiased;user-select:none;-webkit-user-select:none;overflow:hidden}
     body::after{content:"";position:fixed;top:-180px;left:50%;transform:translateX(-50%);width:600px;height:400px;background:radial-gradient(ellipse,rgba(24,218,173,0.07) 0%,transparent 70%);pointer-events:none;z-index:0}
     .page{display:grid;grid-template-columns:280px 1fr 300px;grid-template-rows:1fr auto;height:100vh;max-width:1400px;margin:0 auto}
-    .sidebar{padding:2.5rem 1.75rem;border-right:1px solid var(--border);display:flex;flex-direction:column;gap:1.5rem;overflow-y:auto;z-index:1}
-    .avatar{width:100px;height:100px;border-radius:50%;border:2px solid var(--border-hover);background:var(--surface2);overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:700;color:var(--accent)}
+    .sidebar{padding:1.5rem 1.5rem;border-right:1px solid var(--border);display:flex;flex-direction:column;gap:1rem;overflow-y:auto;z-index:1}
+    .avatar{width:72px;height:72px;border-radius:50%;border:2px solid var(--border-hover);background:var(--surface2);overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:700;color:var(--accent)}
     .avatar img{width:100%;height:100%;object-fit:cover}
     .avail-badge{display:inline-flex;align-items:center;gap:7px;font-size:11px;letter-spacing:0.08em;color:var(--accent)}
     .avail-dot{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:blink 2.4s ease-in-out infinite;flex-shrink:0}
@@ -46,22 +46,22 @@
     .btn-primary:hover{background:transparent;color:var(--accent)}
     .btn-secondary{background:var(--surface);color:var(--fg);border-color:var(--border)}
     .btn-secondary:hover{border-color:var(--border-hover);background:var(--surface2);color:var(--accent)}
-    .main{padding:2.5rem 2rem;border-right:1px solid var(--border);display:flex;flex-direction:column;gap:2.5rem;z-index:1;overflow-y:auto}
-    .section-header{display:flex;align-items:center;gap:10px;margin-bottom:1.25rem;font-size:15px;font-weight:600;color:var(--fg)}
+    .main{padding:1.5rem 1.75rem;border-right:1px solid var(--border);display:flex;flex-direction:column;gap:1.5rem;z-index:1;overflow-y:auto}
+    .section-header{display:flex;align-items:center;gap:10px;margin-bottom:0.75rem;font-size:15px;font-weight:600;color:var(--fg)}
     .section-header .ms{color:var(--accent);font-size:18px}
     .game-card{border:1px solid var(--border);border-radius:10px;overflow:hidden;text-decoration:none;display:block;background:var(--surface);transition:border-color 0.2s}
     .game-card:hover{border-color:var(--border-hover)}
-    .game-thumb{width:100%;height:200px;background:var(--surface2);overflow:hidden;display:flex;align-items:center;justify-content:center}
+    .game-thumb{width:100%;height:140px;background:var(--surface2);overflow:hidden;display:flex;align-items:center;justify-content:center}
     .game-thumb img{width:100%;height:100%;object-fit:cover}
     .game-thumb .ms{font-size:48px;color:var(--dim)}
-    .game-body{padding:1.25rem}
+    .game-body{padding:0.85rem 1rem}
     .game-title{font-size:17px;font-weight:600;color:var(--fg);margin-bottom:0.4rem}
     .game-desc{font-size:12px;color:var(--mid);line-height:1.7;margin-bottom:1rem}
     .btn-play{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--accent);border-radius:7px;padding:0.5rem 1.1rem;font-family:"Geist Mono",monospace;font-size:12px;font-weight:600;color:var(--accent);text-decoration:none;background:transparent;transition:background 0.2s,color 0.2s}
     .btn-play:hover{background:var(--accent);color:#071210}
     .btn-play .ms{font-size:15px}
-    .scripts-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-    .script-card{position:relative;border:1px solid var(--border);border-radius:9px;padding:1rem;background:var(--surface);text-decoration:none;display:block;transition:border-color 0.2s,background 0.2s}
+    .scripts-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+    .script-card{position:relative;border:1px solid var(--border);border-radius:9px;padding:0.75rem;background:var(--surface);text-decoration:none;display:block;transition:border-color 0.2s,background 0.2s}
     .script-card:hover{border-color:var(--border-hover);background:var(--surface2)}
     .script-card-icon{position:absolute;top:0.85rem;right:0.85rem;color:var(--dim)}
     .script-card-icon .ms{font-size:15px}
@@ -74,15 +74,15 @@
     .more-card .ms{font-size:16px;color:var(--accent)}
     .more-card-title{font-size:13px;font-weight:600;color:var(--fg);margin-bottom:2px}
     .more-card-desc{font-size:11.5px;color:var(--mid)}
-    .right{padding:2.5rem 1.75rem;display:flex;flex-direction:column;gap:2rem;z-index:1;overflow-y:auto}
+    .right{padding:1.5rem 1.5rem;display:flex;flex-direction:column;gap:1rem;z-index:1;overflow-y:auto}
     .process-steps{display:flex;flex-direction:column}
-    .process-step{display:grid;grid-template-columns:36px 1fr;gap:0.85rem;padding:1rem 0;border-bottom:1px solid var(--border);align-items:start}
+    .process-step{display:grid;grid-template-columns:36px 1fr;gap:0.75rem;padding:0.6rem 0;border-bottom:1px solid var(--border);align-items:start}
     .process-step:first-child{border-top:1px solid var(--border)}
     .step-icon-wrap{width:36px;height:36px;border-radius:8px;background:var(--accent-dim);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0}
     .step-icon-wrap .ms{font-size:17px;color:var(--accent)}
     .step-title{font-size:14px;font-weight:600;color:var(--fg);margin-bottom:3px}
     .step-desc{font-size:11.5px;color:var(--mid);line-height:1.65}
-    .footer{grid-column:span 3;border-top:1px solid var(--border);padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--dim);flex-shrink:0}
+    .footer{grid-column:span 3;border-top:1px solid var(--border);padding:0.65rem 2rem;display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--dim);flex-shrink:0}
     .footer a{color:var(--accent);text-decoration:none}
     .footer a:hover{text-decoration:underline;text-underline-offset:3px}
     ::-webkit-scrollbar{display:none}
