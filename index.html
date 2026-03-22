@@ -12,10 +12,10 @@
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
     :root{--bg:#0d0f0e;--surface:#131816;--surface2:#181e1c;--surface3:#1e2522;--border:rgba(24,218,173,0.1);--border-hover:rgba(24,218,173,0.28);--fg:#e4f0ec;--mid:#6b8a82;--dim:#3d5550;--accent:#18daad;--accent-dim:rgba(24,218,173,0.1)}
     html{scroll-behavior:smooth}
-    body{background:var(--bg);color:var(--fg);font-family:"Geist Mono",monospace;font-size:13px;line-height:1.6;min-height:100vh;-webkit-font-smoothing:antialiased}
+    body{background:var(--bg);color:var(--fg);font-family:"Geist Mono",monospace;font-size:13px;line-height:1.6;min-height:100vh;-webkit-font-smoothing:antialiased;user-select:none;-webkit-user-select:none}
     body::after{content:"";position:fixed;top:-180px;left:50%;transform:translateX(-50%);width:600px;height:400px;background:radial-gradient(ellipse,rgba(24,218,173,0.07) 0%,transparent 70%);pointer-events:none;z-index:0}
     .page{display:grid;grid-template-columns:280px 1fr 300px;grid-template-rows:1fr auto;min-height:100vh;max-width:1400px;margin:0 auto}
-    .sidebar{padding:2.5rem 1.75rem;border-right:1px solid var(--border);display:flex;flex-direction:column;gap:1.5rem;position:sticky;top:0;height:100vh;overflow-y:auto;z-index:1}
+    .sidebar{padding:2.5rem 1.75rem;border-right:1px solid var(--border);display:flex;flex-direction:column;gap:1.5rem;position:sticky;top:0;align-self:start;z-index:1}
     .avatar{width:100px;height:100px;border-radius:50%;border:2px solid var(--border-hover);background:var(--surface2);overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:700;color:var(--accent)}
     .avatar img{width:100%;height:100%;object-fit:cover}
     .avail-badge{display:inline-flex;align-items:center;gap:7px;font-size:11px;letter-spacing:0.08em;color:var(--accent)}
@@ -131,7 +131,7 @@
       <div class="sidebar-name">Vector <span>[]</span></div>
       <div class="sidebar-handle">@yourdiscord</div>
     </div>
-    <p class="sidebar-bio">I'm a <a href="https://www.roblox.com/users/YOURID/profile" target="_blank">Roblox Backend Developer</a></p>
+    <p class="sidebar-bio">I'm a Roblox Luau Developer</p>
     <div class="sidebar-tag"><span class="ms">workspace_premium</span> Your role / community tag</div>
     <div class="divider"></div>
     <div class="skills-wrap">
